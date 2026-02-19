@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>The Process — Founders Club</title>
-    <meta name="description" content="Únete a los primeros 1,000. Gana 1 año de suplementos gratis y entra al Founders Club exclusivo.">
+    <meta name="description" content="Regístrate y obtén 15% de descuento en todos los productos de The Process durante un año completo.">
     <meta name="theme-color" content="#000000">
 
     <!-- Favicon -->
@@ -305,38 +305,23 @@
         /* Logo */
         .hero-logo {
             display: flex;
-            flex-direction: column;
+            justify-content: center;
             align-items: center;
-            margin-bottom: 40px;
+            margin-bottom: 32px;
             opacity: 0;
             animation: fadeInUp 0.6s ease forwards;
         }
 
-        .logo-box {
-            width: 56px;
-            height: 56px;
-            border: 2px solid var(--gold);
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 32px;
-            color: var(--gold);
-            margin-bottom: 12px;
+        .logo-img {
+            width: 180px;
+            height: auto;
+            object-fit: contain;
         }
 
-        .logo-text {
-            font-family: 'Bebas Neue', sans-serif;
-            font-size: 20px;
-            letter-spacing: 0.4em;
-            color: var(--white);
-            margin-bottom: 4px;
-        }
-
-        .logo-tagline {
-            font-size: 9px;
-            letter-spacing: 0.25em;
-            color: rgba(255, 255, 255, 0.4);
+        @media (min-width: 768px) {
+            .logo-img {
+                width: 220px;
+            }
         }
 
         /* Urgency badge */
@@ -900,9 +885,7 @@
         <div class="hero-content">
             <!-- Logo -->
             <div class="hero-logo">
-                <div class="logo-box">P</div>
-                <div class="logo-text">THE PROCESS</div>
-                <div class="logo-tagline">CONFÍA EN EL PROCESO</div>
+                <img src="logo.png" alt="The Process" class="logo-img">
             </div>
 
             <!-- Badge -->
@@ -912,20 +895,20 @@
             </div>
 
             <!-- Main content -->
-            <p class="eyebrow">FOUNDERS EDITION — SOLO LOS PRIMEROS 1,000</p>
+            <p class="eyebrow">FOUNDERS EDITION — CUPO LIMITADO</p>
             <h1 class="headline hero-headline">
-                <span>GANA 1 AÑO</span>
-                <span>DE SUPLEMENTOS</span>
-                <span>GRATIS</span>
+                <span>15% OFF</span>
+                <span>POR 1 AÑO</span>
+                <span>COMPLETO</span>
             </h1>
             <p class="hero-subheadline">
-                Entra al Founders Club. Sé parte de los primeros en The Process.
+                Regístrate ahora y obtén 15% de descuento en todas tus compras durante un año completo.
             </p>
             <div class="hero-cta">
-                <a href="#form" class="btn btn-primary">PARTICIPAR AHORA →</a>
+                <a href="#form" class="btn btn-primary">OBTENER MI 15% →</a>
             </div>
             <p class="hero-counter">
-                ⚡ Más de <span id="counter">0</span> personas ya participaron
+                ⚡ Más de <span id="counter">0</span> personas ya se registraron
             </p>
         </div>
 
@@ -935,32 +918,32 @@
         </div>
     </section>
 
-    <!-- PRIZES -->
+    <!-- BENEFITS -->
     <section class="prizes" id="prizes">
         <div class="section-header">
-            <h2 class="section-title">¿QUÉ PUEDES GANAR?</h2>
-            <p class="section-subtitle">Tres formas de ser parte del proceso</p>
+            <h2 class="section-title">¿QUÉ OBTIENES?</h2>
+            <p class="section-subtitle">Beneficios exclusivos por registrarte</p>
         </div>
         <div class="prizes-grid">
             <div class="glass-card prize-card">
-                <span class="prize-icon">🏆</span>
-                <h3 class="prize-title">1 AÑO GRATIS</h3>
+                <span class="prize-icon">💰</span>
+                <h3 class="prize-title">15% DE DESCUENTO</h3>
                 <p class="prize-body">
-                    Sortearemos ganadores que recibirán acceso completo a nuestra línea de productos durante 12 meses. Sin condiciones.
+                    Obtén 15% de descuento en todas tus compras durante un año completo. Sin códigos, sin complicaciones.
                 </p>
             </div>
             <div class="glass-card prize-card">
                 <span class="prize-icon">⭐</span>
-                <h3 class="prize-title">FOUNDERS CLUB</h3>
+                <h3 class="prize-title">ACCESO ANTICIPADO</h3>
                 <p class="prize-body">
-                    Los primeros 1,000 entran al club exclusivo: 20% de descuento permanente por 1 año, acceso anticipado a lanzamientos y sorteos privados.
+                    Sé el primero en conocer nuevos productos y lanzamientos exclusivos antes que nadie.
                 </p>
             </div>
             <div class="glass-card prize-card">
                 <span class="prize-icon">⚡</span>
-                <h3 class="prize-title">ACCESO PRIORITARIO</h3>
+                <h3 class="prize-title">OFERTAS EXCLUSIVAS</h3>
                 <p class="prize-body">
-                    Cuando la tienda abra, tú serás el primero en saberlo. Sin lista de espera. Sin intermediarios.
+                    Accede a promociones especiales y descuentos adicionales solo para miembros registrados.
                 </p>
             </div>
         </div>
@@ -994,8 +977,8 @@
         <div class="glass-card form-card">
             <div class="form-content" id="form-content">
                 <div class="form-header">
-                    <h2 class="form-title">ÚNETE AL PROCESO</h2>
-                    <p class="form-subtitle">Regístrate en 30 segundos. Asegura tu lugar.</p>
+                    <h2 class="form-title">ACTIVA TU 15% OFF</h2>
+                    <p class="form-subtitle">Regístrate y obtén tu descuento por un año completo.</p>
                 </div>
 
                 <form id="lead-form" novalidate action="javascript:void(0)" method="POST">
@@ -1020,7 +1003,7 @@
                     </div>
 
                     <div class="social-buttons">
-                        <a href="https://instagram.com/theprocess_supplements" target="_blank" rel="noopener" class="btn btn-outline social-btn">
+                        <a href="https://instagram.com/theprocess.mx" target="_blank" rel="noopener" class="btn btn-outline social-btn">
                             <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                             SEGUIR EN INSTAGRAM
                         </a>
@@ -1035,7 +1018,7 @@
                     </div>
 
                     <button type="submit" class="btn btn-primary submit-btn" id="submit-btn">
-                        <span id="btn-text">CONFIRMAR PARTICIPACIÓN</span>
+                        <span id="btn-text">ACTIVAR MI 15% OFF</span>
                         <div class="spinner" id="spinner" style="display: none;"></div>
                     </button>
 
@@ -1050,19 +1033,19 @@
                     <circle cx="40" cy="40" r="36"/>
                     <path d="M24 42 L34 52 L56 30"/>
                 </svg>
-                <h2 class="success-title">ESTÁS DENTRO</h2>
+                <h2 class="success-title">¡LISTO!</h2>
 
                 <div id="lead-number-container" class="lead-number-container" style="display: none;">
-                    <span class="lead-label">TU NÚMERO DE REGISTRO</span>
+                    <span class="lead-label">TU CÓDIGO DE REGISTRO</span>
                     <span id="lead-number" class="lead-number">#0000</span>
-                    <span id="founders-badge" class="founders-badge" style="display: none;">⭐ FOUNDERS CLUB</span>
+                    <span id="founders-badge" class="founders-badge" style="display: none;">15% OFF ACTIVADO</span>
                 </div>
 
                 <p class="success-body">
-                    Tu lugar está asegurado. Sigue nuestras redes para no perderte el anuncio de ganadores y la fecha de apertura.
+                    Tu 15% de descuento está activado. Te enviaremos un correo cuando la tienda esté lista para que puedas empezar a comprar.
                 </p>
                 <div class="success-socials">
-                    <a href="https://instagram.com/theprocess_supplements" target="_blank" rel="noopener" class="success-social-link">
+                    <a href="https://instagram.com/theprocess.mx" target="_blank" rel="noopener" class="success-social-link">
                         <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
                         IG
                     </a>
@@ -1084,7 +1067,7 @@
         <div class="divider"></div>
         <p class="footer-text">Síguenos para el anuncio de ganadores</p>
         <div class="footer-socials">
-            <a href="https://instagram.com/theprocess_supplements" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram">
+            <a href="https://instagram.com/theprocess.mx" target="_blank" rel="noopener" class="footer-social-link" aria-label="Instagram">
                 <svg viewBox="0 0 24 24"><path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/></svg>
             </a>
             <a href="https://www.tiktok.com/@theprocesssupplements" target="_blank" rel="noopener" class="footer-social-link" aria-label="TikTok">
